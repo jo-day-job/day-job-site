@@ -1,27 +1,40 @@
+import { mode } from "@chakra-ui/theme-tools";
+
 export const ButtonStyles = {
   baseStyle: {},
   sizes: {},
   variants: {
     primary: {
-      bg: "orange.300", // Replace with your color code
-      color: "white",
+      bg: "peachFuzz",
+      color: "black",
       _hover: {
-        bg: "orange.400", // Replace with your color code
+        bg: "peachHover",
+        color: "peachFuzz",
       },
       _active: {
-        bg: "orange.500", // Replace with your color code
+        bg: "blackLowEmp",
+        color: "peachFuzz",
       },
     },
-    secondary: {
-      bg: "gray.300", // Replace with your color code
-      color: "white",
+    secondary: (props: any) => ({
+      borderWidth: "2px",
+      borderStyle: "solid",
+      borderColor: "peachFuzz",
+      bg: "transparent",
+      color: mode("black", "white")(props),
       _hover: {
-        bg: "gray.400", // Replace with your color code
+        bg: "whiteLowEmp",
+        color: "peachFuzz",
       },
       _active: {
-        bg: "gray.500", // Replace with your color code
+        bg: "peachHover",
+        color: "peachFuzz",
       },
-    },
+    }),
   },
-  defaultProps: {},
+  defaultProps: {
+    rounded: "4px",
+    px: "20px",
+    py: "13px",
+  },
 };

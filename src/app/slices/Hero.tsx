@@ -11,7 +11,6 @@ export const Hero = () => {
   return (
     <Flex
       direction={{ base: "column", md: "row" }}
-      //   w={{ base: "100%", md: "100vw" }}
       h={{ base: "100%", md: "100vh" }}
       sx={{ img: { h: "fit-content" } }}
       bg={base}
@@ -29,7 +28,6 @@ export const Hero = () => {
       >
         <Image
           alt=""
-          //   layout="responsive"
           width={462}
           height={356}
           src="/assets/images/Group 51.png"
@@ -56,14 +54,12 @@ export const Hero = () => {
         sx={{
           img: {
             transform: "rotate(-5.78deg) scaleX(-1)",
-            // scaleX: -1,
             mr: "-20px",
           },
         }}
       >
         <Image
           alt=""
-          //   layout="responsive"
           width={462.4}
           height={356.8}
           src="/assets/images/Group 51.png"

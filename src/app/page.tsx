@@ -1,13 +1,22 @@
 // app/page.tsx
 "use client";
-import { Link } from "@chakra-ui/next-js";
-import { Button, SimpleGrid } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
+import { Contact } from "./slices/Contact";
+import { Footer } from "./slices/Footer";
+import { GoodCompany } from "./slices/GoodCompany";
+import { Intro } from "./slices/Intro";
+import { References } from "./slices/References";
+import { Hero } from "./slices/Hero";
 
 export default function Page() {
   return (
-    <>
-      <Button variant="primary">Let’s work together</Button>
-      <Button variant="secondary">Let’s work together </Button>
-    </>
+    <Flex direction={"column"}>
+      <Hero />
+      <Intro />
+      <GoodCompany />
+      <References />
+      <Contact />
+      <Footer />
+    </Flex>
   );
 }

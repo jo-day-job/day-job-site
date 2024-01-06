@@ -3,7 +3,13 @@ import { colors } from "./colors";
 import { type ThemeConfig, extendTheme } from "@chakra-ui/react";
 import { ButtonStyles } from "./button";
 
-const theme: ThemeConfig = extendTheme({
+const config: ThemeConfig = {
+  initialColorMode: "system",
+  useSystemColorMode: true,
+};
+
+const theme = extendTheme({
+  config,
   colors,
   components: {
     Button: ButtonStyles,

@@ -10,19 +10,20 @@ export const Hero = () => {
 
   return (
     <Flex
-      direction={{ base: "column", md: "row" }}
-      h={{ base: "100%", md: "100vh" }}
+      direction={{ base: "column", tablet: "row" }}
+      h={{ base: "100%", tablet: "100vh" }}
       sx={{ img: { h: "fit-content" } }}
       bg={base}
       overflow={"hidden"}
     >
       <Flex
-        alignItems={{ base: "center", md: "flex-end" }}
+        alignItems={{ base: "center", tablet: "flex-end" }}
         w="100%"
         h="100%"
         sx={{
           img: {
             transform: "rotate(-5.78deg)",
+            minW: "33vw",
           },
         }}
       >
@@ -34,7 +35,7 @@ export const Hero = () => {
         />
       </Flex>
       <Flex
-        p={{ base: "16px", md: "0" }}
+        p={{ base: "16px", tablet: "0" }}
         justifyContent="flex-end"
         w="100%"
         h="100%"
@@ -55,6 +56,7 @@ export const Hero = () => {
           img: {
             transform: "rotate(-5.78deg) scaleX(-1)",
             mr: "-20px",
+            minW: "33vw",
           },
         }}
       >

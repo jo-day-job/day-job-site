@@ -10,7 +10,19 @@ import { Hero } from "./slices/Hero";
 
 export default function Page() {
   return (
-    <Flex direction={"column"}>
+    <Flex
+      direction={"column"}
+      sx={{
+        img: "auto",
+        button: {
+          rounded: "4px",
+          px: "20px",
+          py: "13px",
+          fontSize: { base: "14px", tablet: "16px", laptop: "18px" },
+          lineHeight: "150%",
+        },
+      }}
+    >
       <Hero />
       <Intro />
       <GoodCompany />

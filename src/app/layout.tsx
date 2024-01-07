@@ -1,8 +1,7 @@
 // app/layout.tsx
-import { ColorModeScript } from "@chakra-ui/react";
-import { fonts } from "./fonts";
-import { Providers } from "./providers";
 import theme from "@/theme/theme";
+import { ColorModeScript } from "@chakra-ui/react";
+import { Providers } from "./providers";
 
 export default function RootLayout({
   children,
@@ -10,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={fonts.rubik.variable}>
+    <html lang="en">
       <body>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
 

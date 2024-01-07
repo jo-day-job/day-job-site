@@ -1,7 +1,13 @@
 import { mode } from "@chakra-ui/theme-tools";
 
 export const ButtonStyles = {
-  baseStyle: {},
+  baseStyle: {
+    rounded: "4px",
+    px: "20px",
+    py: "13px",
+    fontSize: { base: "14px", tablet: "16px", laptop: "18px" },
+    lineHeight: "150%", // Adjust line height as needed
+  },
   sizes: {},
   variants: {
     primary: {
@@ -36,5 +42,7 @@ export const ButtonStyles = {
     rounded: "4px",
     px: "20px",
     py: "13px",
+    fontSize: { base: "14px", tablet: "16px", laptop: "18px" },
+    lineHeight: "150%", // Adjust line height as needed
   },
 };

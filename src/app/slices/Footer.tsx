@@ -32,7 +32,12 @@ export const Footer = () => {
         sx={{ a: { minW: "194px" } }}
         direction={{ base: "column", tablet: "row" }}
       >
-        <Button w="100%" variant="ghost" as="a" href="mailto:jo@day-job.co.uk">
+        <Button
+          w="100%"
+          variant="ghost"
+          as="a"
+          href="https://www.linkedin.com/in/iamjowill/"
+        >
           LinkedIn
         </Button>
         <Button
@@ -43,7 +48,12 @@ export const Footer = () => {
         >
           Contact
         </Button>
-        <Button w="100%" variant="ghost" as="a" href="mailto:jo@day-job.co.uk">
+        <Button
+          w="100%"
+          variant="ghost"
+          as="a"
+          href="https://medium.com/@heck-yeah"
+        >
           Blog
         </Button>
       </Flex>

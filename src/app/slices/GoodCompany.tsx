@@ -77,8 +77,8 @@ export const GoodCompany = () => {
             You're in good company
           </Text>
           <Text variant="body" fontWeight="bold">
-            Over the years, Jo has worked with brands you’ve heard of (and some
-            you haven’t) across all industries and sectors.
+            Over the years, Jo has worked with brands you've heard of (and some
+            you haven't) across all industries and sectors.
           </Text>
           <Text variant="body" opacity={0.8}>
             From fitness influencers to FTSE 500 companies Jo brings a

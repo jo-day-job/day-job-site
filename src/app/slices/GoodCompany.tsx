@@ -94,12 +94,7 @@ export const GoodCompany = () => {
             },
           }}
         >
-          <Image
-            alt=""
-            width={395}
-            height={416}
-            src={"/assets/images/logos.png"}
-          />
+          <Image alt="" width={395} height={416} src={src} />
         </Box>
       </Flex>
     </Flex>

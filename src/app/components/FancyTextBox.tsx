@@ -1,6 +1,7 @@
 import { Box, Text, TextProps } from "@chakra-ui/react";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 const CustomBorderBox = () => (
   <motion.svg
     xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +63,26 @@ const CustomBorderBox = () => (
   </motion.svg>
 );
 
-const FancyTextBox = ({ text, ...props }: { text: string } & TextProps) => {
+interface FancyTextBoxProps extends TextProps {
+  textArray: string[];
+  interval?: number; // in milliseconds
+}
+
+const FancyTextBox: React.FC<FancyTextBoxProps> = ({
+  textArray,
+  interval = 3000,
+  ...props
+}) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
+    }, interval);
+
+    return () => clearInterval(timer);
+  }, [textArray.length, interval]);
+
   return (
     <Box position="relative" width="228px" height="93px">
       <CustomBorderBox />
@@ -73,7 +93,7 @@ const FancyTextBox = ({ text, ...props }: { text: string } & TextProps) => {
         transform="translate(-50%, -50%)"
         {...props}
       >
-        {text}
+        {textArray[currentIndex]}
       </Text>
     </Box>
   );

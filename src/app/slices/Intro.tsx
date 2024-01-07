@@ -47,7 +47,12 @@ export const Intro = () => {
             alignItems="center"
             flexDirection={{ base: "column", tablet: "row" }}
           >
-            <FancyTextBox text="Product." variant={"h1"} as="h1" />
+            <FancyTextBox
+              textArray={["Product", "UX", "Product", "UI", "digital"]}
+              interval={1000}
+              variant={"h1"}
+              as="h1"
+            />
             <Text
               as="h1"
               variant="h1"

@@ -14,5 +14,9 @@ export const TextStyles = {
       fontSize: { base: "14px", tablet: "16px", laptop: "18px" },
       lineHeight: "150%", // Adjust line height as needed
     },
+    bodysmall: {
+      fontSize: { base: "12px", tablet: "14px", laptop: "16px" },
+      lineHeight: "150%", // Adjust line height as needed
+    },
   },
 };

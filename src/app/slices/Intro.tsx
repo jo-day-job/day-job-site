@@ -70,7 +70,6 @@ export const Intro = () => {
             },
           }}
           display={{ base: "none", tablet: "block" }}
-          
         >
           <Image
             alt=""
@@ -117,6 +116,7 @@ export const Intro = () => {
           minW={{ base: "100%", tablet: "700px" }}
           zIndex={1}
           gap="24px"
+      
         >
           <Text variant="body" fontWeight="bold">
             Jo Williamson is a digital product designer based in the North East

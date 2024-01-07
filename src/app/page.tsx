@@ -21,6 +21,9 @@ export default function Page() {
           fontSize: { base: "14px", tablet: "16px", laptop: "18px" },
           lineHeight: "150%",
         },
+        // "&>*": {
+        //   h: { base: "844px", tablet: "744px", laptop: "1024px" },
+        // },
       }}
     >
       <Hero />

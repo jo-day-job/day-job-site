@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import FancyTextBox from "../components/FancyTextBox";
+import Link from "next/link";
 
 export const Intro = () => {
   const base = useColorModeValue("white", "black");
@@ -116,7 +117,6 @@ export const Intro = () => {
           minW={{ base: "100%", tablet: "700px" }}
           zIndex={1}
           gap="24px"
-      
         >
           <Text variant="body" fontWeight="bold">
             Jo Williamson is a digital product designer based in the North East
@@ -134,6 +134,8 @@ export const Intro = () => {
             variant={"primary"}
             ml="auto"
             w={{ base: "100%", tablet: "auto" }}
+            as="a"
+            href="mailto:jo@day-job.co.uk"
           >
             Let’s work together
           </Button>

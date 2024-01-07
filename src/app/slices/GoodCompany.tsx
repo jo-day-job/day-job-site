@@ -90,7 +90,6 @@ export const GoodCompany = () => {
             img: {
               w: "auto",
               h: "fit-content",
-              // minW: "395px",
             },
           }}
         >

@@ -29,7 +29,7 @@ export const ButtonStyles = {
       bg: "transparent",
       color: mode("black", "white")(props),
       _hover: {
-        bg: "whiteLowEmp",
+        bg: "white",
         color: "peachFuzz",
       },
       _active: {

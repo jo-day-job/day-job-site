@@ -160,7 +160,10 @@ const FancyTextBox: React.FC<FancyTextBoxProps> = ({
       position="relative"
       width={`${textWidth}px`}
       height="93px"
-      sx={{ svg: { overflow: "visible" } }}
+      sx={{
+        svg: { overflow: "visible" },
+        transition: "all 0.3s ease-out",
+      }}
       // sx={{
       //   rect: {
       //     transition: "all 0.3s ease-out",

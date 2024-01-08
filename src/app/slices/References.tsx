@@ -63,8 +63,8 @@ export const References = () => {
             img: {
               w: "auto",
               h: "auto",
-              maxH: "265px",
-              maxW: "395px",
+              maxH: { base: "100%", tablet: "265px" },
+              maxW: { base: "100%", tablet: "395px" },
             },
           }}
         >
@@ -90,7 +90,8 @@ export const References = () => {
       >
         <Flex direction={"column"} gap={{ base: "24px", laptop: "35px" }}>
           <Center
-            h={{ base: "252px", tablet: "430px", laptop: "637px" }}
+            h={{ base: "100%", tablet: "430px", laptop: "637px" }}
+            minH="252px"
             mt={{ laptop: "65px" }}
           >
             <Text variant={"h2"} as="h2" color="black" textAlign={"center"}>

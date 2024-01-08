@@ -82,16 +82,21 @@ export const References = () => {
       <Center
         bg="peachFuzz"
         h="100%"
+        minH="100vh"
         flex={1}
         flexDirection={"column"}
-        gap="64px"
+        justifyContent={"space-between"}
+        // gap="64px"
         px={{ base: "24px", tablet: "64px", laptop: "120px" }}
         py={{ base: "80px", tablet: "64px" }}
       >
-        <Flex direction={"column"} gap={{ base: "24px", laptop: "35px" }}>
+        <Flex
+          direction={"column"}
+          gap={{ base: "24px", laptop: "35px" }}
+          h="100%"
+        >
           <Center
             h={{ base: "100%", tablet: "430px", laptop: "637px" }}
-            minH="252px"
             mt={{ laptop: "65px" }}
           >
             <Text variant={"h2"} as="h2" color="black" textAlign={"center"}>

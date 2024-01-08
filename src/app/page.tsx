@@ -7,6 +7,7 @@ import { GoodCompany } from "./slices/GoodCompany";
 import { Intro } from "./slices/Intro";
 import { References } from "./slices/References";
 import { Hero } from "./slices/Hero";
+import { AnimateAllChildren } from "easy-chakra-animate";
 
 export default function Page() {
   return (
@@ -27,12 +28,14 @@ export default function Page() {
         },
       }}
     >
-      <Hero />
-      <Intro />
-      <GoodCompany />
-      <References />
-      <Contact />
-      <Footer />
+      <AnimateAllChildren>
+        <Hero />
+        <Intro />
+        <GoodCompany />
+        <References />
+        <Contact />
+        <Footer />
+      </AnimateAllChildren>
     </Flex>
   );
 }

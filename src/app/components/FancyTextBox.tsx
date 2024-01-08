@@ -32,8 +32,6 @@ const CustomBorderBox: React.FC<CustomBorderBoxProps> = ({
 }: {
   width: number;
 }) => {
-  if (width < 1) return;
-
   const base = useColorModeValue("white", "black");
 
   const defaultWidth = width * 1.05;
@@ -50,6 +48,8 @@ const CustomBorderBox: React.FC<CustomBorderBoxProps> = ({
       controls.stop();
     };
   }, [width, adjustedWidth]);
+
+  if (width < 1) return;
 
   return (
     <motion.svg

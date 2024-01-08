@@ -46,12 +46,13 @@ export const Intro = () => {
           <Flex
             alignItems="center"
             flexDirection={{ base: "column", tablet: "row" }}
+            gap="8px"
           >
             <FancyTextBox
               textArray={["Product", "UX", "Product", "UI", "digital"]}
-              interval={1000}
+              interval={3000}
               variant={"h1"}
-              as="h1"
+              // as="h1"
             />
             <Text
               as="h1"

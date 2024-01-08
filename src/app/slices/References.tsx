@@ -92,7 +92,7 @@ export const References = () => {
       >
         <Flex
           direction={"column"}
-          gap={{ base: "24px", laptop: "35px" }}
+          gap={{ base: "8px", laptop: "35px" }}
           h="100%"
         >
           <Center

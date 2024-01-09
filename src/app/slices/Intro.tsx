@@ -6,10 +6,9 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { AnimateAllChildren } from "easy-chakra-animate";
 import Image from "next/image";
 import FancyTextBox from "../components/FancyTextBox";
-import Link from "next/link";
-import { AnimateAllChildren } from "easy-chakra-animate";
 
 export const Intro = () => {
   const base = useColorModeValue("white", "black");

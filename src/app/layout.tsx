@@ -1,9 +1,8 @@
 // app/layout.tsx
-import { ReactNode } from "react";
-import Head from "next/head";
-import { ColorModeScript } from "@chakra-ui/react";
-import { Providers } from "./providers";
 import theme from "@/theme/theme";
+import { ColorModeScript } from "@chakra-ui/react";
+import { ReactNode } from "react";
+import { Providers } from "./providers";
 
 // Define link URLs as constants
 const SITE_URL = "http://www.dayjobstudios.co.uk";

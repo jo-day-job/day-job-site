@@ -1,13 +1,13 @@
 // app/page.tsx
 "use client";
 import { Flex } from "@chakra-ui/react";
+import { AnimateAllChildren } from "easy-chakra-animate";
 import { Contact } from "./slices/Contact";
 import { Footer } from "./slices/Footer";
 import { GoodCompany } from "./slices/GoodCompany";
+import { Hero } from "./slices/Hero";
 import { Intro } from "./slices/Intro";
 import { References } from "./slices/References";
-import { Hero } from "./slices/Hero";
-import { AnimateAllChildren } from "easy-chakra-animate";
 
 export default function Page() {
   return (

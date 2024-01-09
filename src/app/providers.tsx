@@ -1,8 +1,7 @@
-// app/providers.tsx
 "use client";
 
 import theme from "@/theme/theme";
-import { ChakraProvider, useColorModeValue } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
 
 export function Providers({ children }: { children: React.ReactNode }) {

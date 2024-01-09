@@ -1,7 +1,7 @@
 import { Button, Center, Flex, SimpleGrid, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import React, { useState } from "react";
 import { AnimateAllChildren } from "easy-chakra-animate";
+import Image from "next/image";
+import { useState } from "react";
 
 export const References = () => {
   const quotes = [

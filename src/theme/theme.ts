@@ -1,7 +1,7 @@
 /* theme.ts */
-import { colors } from "./colors";
-import { type ThemeConfig, extendTheme } from "@chakra-ui/react";
+import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
 import { ButtonStyles } from "./button";
+import { colors } from "./colors";
 import { TextStyles } from "./text";
 
 const config: ThemeConfig = {

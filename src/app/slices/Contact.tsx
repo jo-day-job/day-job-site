@@ -1,4 +1,3 @@
-import { AnimateAllChildren } from "easy-chakra-animate";
 import {
   Box,
   Button,
@@ -7,6 +6,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { AnimateAllChildren } from "easy-chakra-animate";
 import Image from "next/image";
 
 export const Contact = () => {

@@ -1,6 +1,6 @@
 import { chakra, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const MotionBox = motion(chakra.div);
 

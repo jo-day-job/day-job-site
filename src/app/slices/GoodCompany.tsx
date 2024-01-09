@@ -24,7 +24,7 @@ export const GoodCompany = () => {
         h={{ tablet: "100%" }}
         sx={{
           img: {
-            w: "auto",
+            // w: "auto",
             h: "auto",
             // h: "fit-content",
             maxH: { base: "428px", tablet: "553px", laptop: "834px" },

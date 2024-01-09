@@ -60,7 +60,7 @@ const CustomBorderBox: React.FC<CustomBorderBoxProps> = ({
       fill="none"
     >
       <motion.rect
-        x='80'
+        x='0'
         y="85"
         width={adjustedWidth}
         height={"4"}

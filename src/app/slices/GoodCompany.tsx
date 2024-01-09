@@ -1,13 +1,7 @@
 "use-client";
-import {
-  Box,
-  Center,
-  Flex,
-  Image,
-  Text,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import { Box, Center, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
 import { AnimateAllChildren, ScrollOnView } from "easy-chakra-animate";
+import Image from "next/image";
 
 export const GoodCompany = () => {
   const src = useBreakpointValue(

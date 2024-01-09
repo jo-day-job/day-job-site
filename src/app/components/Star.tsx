@@ -1,3 +1,4 @@
+"use client";
 import { chakra, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
@@ -6,7 +7,6 @@ const MotionBox = motion(chakra.div);
 
 const Star: React.FC = () => {
   const base = useColorModeValue("#FFFFFF", "#252525");
-  console.log("🚀 ~ file: Star.tsx:9 ~ base:", base);
 
   const [key, setKey] = useState(Math.random());
 
@@ -20,7 +20,7 @@ const Star: React.FC = () => {
   }, []);
 
   // Randomize initial position and animation delay
-  const initialY = Math.random() * 100;
+  const initialY = 100;
   const delay = Math.random() * 2;
 
   const randomAngle = Math.random() * 60;

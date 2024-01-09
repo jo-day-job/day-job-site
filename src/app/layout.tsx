@@ -22,7 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html>
       {/* SEO and Metadata */}
-      <Head>
+      <head>
         <title>Day Job Studios | Digital Product Design by Jo Williamson</title>
 
         {/* Viewport for Responsive Design */}
@@ -83,7 +83,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* Additional Meta Tags */}
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-      </Head>
+      </head>
 
       {/* Color Mode Script */}
       <body>

@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 const MotionBox = motion(chakra.div);
 
 const Star: React.FC = () => {
-  const base = useColorModeValue("white", "black");
+  const base = useColorModeValue("black", "white");
 
   const [key, setKey] = useState(Math.random());
 

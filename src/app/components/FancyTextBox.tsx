@@ -164,17 +164,6 @@ const FancyTextBox: React.FC<FancyTextBoxProps> = ({
         svg: { overflow: "visible" },
         transition: "all 0.3s ease-out",
       }}
-      // sx={{
-      //   rect: {
-      //     transition: "all 0.3s ease-out",
-      //     // animationDelay: "0.5s",
-      //   },
-      //   line: {
-      //     transition: "all 0.3s ease-out",
-      //     // animationDelay: "0.5s",
-      //   },
-      //   transition: "all 0.3s ease-out",
-      // }}
     >
       <CustomBorderBox width={textWidth} />
       <AnimatePresence>
@@ -200,25 +189,6 @@ const FancyTextBox: React.FC<FancyTextBoxProps> = ({
               </Text>
             )
         )}
-        {/* {currentIndex === 0 && (
-          <Text
-            as={motion.div}
-            key={currentIndex} // Important for triggering animations on change
-            variants={textVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            position="absolute"
-            top="50%"
-            left="50%"
-            transform="translate(-50%, -50%)"
-            {...props}
-            p="16px"
-            ref={textRef}
-          >
-            {textArray[0]}
-          </Text>
-        )} */}
       </AnimatePresence>
     </Box>
   );

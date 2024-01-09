@@ -3,6 +3,7 @@ import theme from "@/theme/theme";
 import { ColorModeScript } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { Providers } from "./providers";
+import Head from "next/head";
 
 // Define link URLs as constants
 const SITE_URL = "http://www.dayjobstudios.co.uk";
@@ -22,7 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html>
       {/* SEO and Metadata */}
-      <head>
+      <Head>
         <title>Day Job Studios | Digital Product Design by Jo Williamson</title>
 
         {/* Viewport for Responsive Design */}
@@ -83,11 +84,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* Additional Meta Tags */}
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-      </head>
+      </Head>
 
       {/* Color Mode Script */}
-      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <body>
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         {/* Providers and Page Content */}
         <Providers>{children}</Providers>
       </body>

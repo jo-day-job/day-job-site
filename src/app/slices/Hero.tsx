@@ -1,6 +1,7 @@
 import { Flex, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import { AnimateAllChildren } from "easy-chakra-animate";
+import Star from "../components/Star";
 
 export const Hero = () => {
   const base = useColorModeValue("black", "white");
@@ -17,6 +18,10 @@ export const Hero = () => {
       bg={base}
       overflow={"hidden"}
     >
+      <Star />
+      <Star />
+      <Star />
+      <Star />
       <AnimateAllChildren>
         <Flex
           alignItems={{ base: "center", tablet: "flex-end" }}
@@ -28,7 +33,14 @@ export const Hero = () => {
               minW: "33vw",
             },
           }}
+          position="relative"
         >
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+
           <Image
             alt=""
             width={462}
@@ -61,7 +73,16 @@ export const Hero = () => {
               minW: "33vw",
             },
           }}
+          position="relative"
         >
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+
           <Image
             alt=""
             width={462.4}

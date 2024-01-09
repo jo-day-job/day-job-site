@@ -27,6 +27,7 @@ export default function Page() {
           overflow: "hidden",
         },
       }}
+      bg="black"
     >
       <AnimateAllChildren>
         <Hero />

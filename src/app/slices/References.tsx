@@ -1,6 +1,7 @@
 import { Button, Center, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import React, { useState } from "react";
+import { AnimateAllChildren } from "easy-chakra-animate";
 
 export const References = () => {
   const quotes = [
@@ -58,26 +59,28 @@ export const References = () => {
         px={{ base: "24px", tablet: "64px", laptop: "120px" }}
         py={{ base: "80px", tablet: "64px" }}
       >
-        <Center
-          sx={{
-            img: {
-              w: "auto",
-              h: "auto",
-              maxH: { base: "100%", tablet: "265px" },
-              maxW: { base: "100%", tablet: "395px" },
-            },
-          }}
-        >
-          <Image
-            alt=""
-            width={395}
-            height={265}
-            src="/assets/images/Group 56.png"
-          />
-        </Center>
-        <Text variant={"h1"} as="h1" color="white" textAlign={"center"}>
-          Don’t just take our word for it
-        </Text>
+        <AnimateAllChildren>
+          <Center
+            sx={{
+              img: {
+                w: "auto",
+                h: "auto",
+                maxH: { base: "100%", tablet: "265px" },
+                maxW: { base: "100%", tablet: "395px" },
+              },
+            }}
+          >
+            <Image
+              alt=""
+              width={395}
+              height={265}
+              src="/assets/images/Group 56.png"
+            />
+          </Center>
+          <Text variant={"h1"} as="h1" color="white" textAlign={"center"}>
+            Don’t just take our word for it
+          </Text>
+        </AnimateAllChildren>
       </Center>
       <Center
         bg="peachFuzz"
@@ -90,43 +93,47 @@ export const References = () => {
         px={{ base: "24px", tablet: "64px", laptop: "120px" }}
         py={{ base: "80px", tablet: "64px" }}
       >
-        <Flex
-          direction={"column"}
-          gap={{ base: "8px", laptop: "35px" }}
-          h="100%"
-        >
-          <Center
-            h={{ base: "100%", tablet: "430px", laptop: "637px" }}
-            mt={{ laptop: "65px" }}
+        <AnimateAllChildren>
+          <Flex
+            direction={"column"}
+            gap={{ base: "8px", laptop: "35px" }}
+            h="100%"
           >
-            <Text variant={"h2"} as="h2" color="black" textAlign={"center"}>
-              {quotes[currentQuote].text}
-            </Text>
-          </Center>
+            <AnimateAllChildren>
+              <Center
+                h={{ base: "100%", tablet: "430px", laptop: "637px" }}
+                mt={{ laptop: "65px" }}
+              >
+                <Text variant={"h2"} as="h2" color="black" textAlign={"center"}>
+                  {quotes[currentQuote].text}
+                </Text>
+              </Center>
 
-          <Text variant="body" color="black" textAlign={"center"}>
-            {quotes[currentQuote].author}
-          </Text>
-          <Text variant="body" color="black" textAlign={"center"}>
-            {quotes[currentQuote].position}
-          </Text>
-        </Flex>
-        <Flex w={"100%"} justifyContent={"space-between"}>
-          <Button
-            variant={"primary"}
-            onClick={prevQuote}
-            textDecoration={"underline"}
-          >
-            Prev
-          </Button>
-          <Button
-            variant={"primary"}
-            onClick={nextQuote}
-            textDecoration={"underline"}
-          >
-            Next
-          </Button>
-        </Flex>
+              <Text variant="body" color="black" textAlign={"center"}>
+                {quotes[currentQuote].author}
+              </Text>
+              <Text variant="body" color="black" textAlign={"center"}>
+                {quotes[currentQuote].position}
+              </Text>
+            </AnimateAllChildren>
+          </Flex>
+          <Flex w={"100%"} justifyContent={"space-between"}>
+            <Button
+              variant={"primary"}
+              onClick={prevQuote}
+              textDecoration={"underline"}
+            >
+              Prev
+            </Button>
+            <Button
+              variant={"primary"}
+              onClick={nextQuote}
+              textDecoration={"underline"}
+            >
+              Next
+            </Button>
+          </Flex>
+        </AnimateAllChildren>
       </Center>
     </SimpleGrid>
   );

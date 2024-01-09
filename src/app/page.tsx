@@ -29,8 +29,8 @@ export default function Page() {
       }}
       bg="black"
     >
+      <Hero />
       <AnimateAllChildren>
-        <Hero />
         <Intro />
         <GoodCompany />
         <References />

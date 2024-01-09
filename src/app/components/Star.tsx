@@ -1,10 +1,12 @@
-import { chakra } from "@chakra-ui/react";
+import { chakra, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 
 const MotionBox = motion(chakra.div);
 
 const Star: React.FC = () => {
+  const base = useColorModeValue("white", "black");
+
   const [key, setKey] = useState(Math.random());
 
   useEffect(() => {
@@ -31,7 +33,7 @@ const Star: React.FC = () => {
       animate={{
         opacity: [0, 1, 0],
         y: [initialY, initialY + 50],
-        fill: ["#FFFFFF", "#FFFFFF", "#FFBE98", "#FFBE98"],
+        fill: [base, base, "#FFBE98", "#FFBE98"],
         rotate: [0, randomAngle * randomNegative],
       }}
       transition={{ duration: 2, delay }}

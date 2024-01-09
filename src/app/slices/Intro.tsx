@@ -85,7 +85,7 @@ export const Intro = () => {
               alt=""
               width={261}
               height={350}
-              src="/assets/images/Group 53.png"
+              src="/assets/images/Group 53.webp"
             />
           </Box>
         </Center>
@@ -94,7 +94,7 @@ export const Intro = () => {
             alt=""
             width={261}
             height={350}
-            src="/assets/images/Group 58.png"
+            src="/assets/images/Group 58.webp"
           />
         </Center>
         <Center
@@ -118,7 +118,7 @@ export const Intro = () => {
               alt=""
               width={261}
               height={350}
-              src="/assets/images/Group 52.png"
+              src="/assets/images/Group 52.webp"
             />
           </Box>
           <Flex

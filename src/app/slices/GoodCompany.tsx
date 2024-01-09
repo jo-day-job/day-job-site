@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export const GoodCompany = () => {
   const src = useBreakpointValue({
-    base: "/assets/images/logos-mobile.png",
-    tablet: "/assets/images/logos.png",
-    desktop: "/assets/images/logos.png",
+    base: "/assets/images/logos-mobile.webp",
+    tablet: "/assets/images/logos.webp",
+    desktop: "/assets/images/logos.webp",
   });
   return (
     <Flex
@@ -42,7 +42,7 @@ export const GoodCompany = () => {
             alt=""
             width={678}
             height={834}
-            src="/assets/images/Group 54.png"
+            src="/assets/images/Group 54.webp"
           />
         </ScrollOnView>
       </Center>

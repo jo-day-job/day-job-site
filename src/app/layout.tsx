@@ -20,7 +20,7 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html>
+    <html lang="en">
       {/* SEO and Metadata */}
       <head>
         <title>Day Job Studios | Digital Product Design by Jo Williamson</title>

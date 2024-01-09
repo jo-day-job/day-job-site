@@ -4,14 +4,11 @@ import { AnimateAllChildren, ScrollOnView } from "easy-chakra-animate";
 import Image from "next/image";
 
 export const GoodCompany = () => {
-  const src = useBreakpointValue(
-    {
-      base: "/assets/images/logos-mobile.png",
-      tablet: "/assets/images/logos.png",
-      desktop: "/assets/images/logos.png",
-    },
-    { ssr: true }
-  );
+  const src = useBreakpointValue({
+    base: "/assets/images/logos-mobile.png",
+    tablet: "/assets/images/logos.png",
+    desktop: "/assets/images/logos.png",
+  });
   return (
     <Flex
       bg="black"
@@ -92,7 +89,7 @@ export const GoodCompany = () => {
               },
             }}
           >
-            <Image alt="" width={395} height={416} src={src} />
+            <Image alt="" width={395} height={416} src={src ?? ""} />
           </Box>
         </AnimateAllChildren>
       </Flex>

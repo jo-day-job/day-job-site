@@ -22,7 +22,6 @@ export const Hero = () => {
       <Star />
       <Star />
       <Star />
-      {/* <AnimateAllChildren> */}
       <Flex
         alignItems={{ base: "center", tablet: "flex-end" }}
         w="100%"
@@ -90,7 +89,6 @@ export const Hero = () => {
           src="/assets/images/Group 51.webp"
         />
       </Flex>
-      {/* </AnimateAllChildren> */}
     </Flex>
   );
 };

@@ -92,12 +92,15 @@ export const References = () => {
         // gap="64px"
         px={{ base: "24px", tablet: "64px", laptop: "120px" }}
         py={{ base: "80px", tablet: "64px" }}
+        width={"100%"}
+        sx={{ "&>*": { w: "100%" } }}
       >
-        <AnimateAllChildren>
+        <AnimateAllChildren width={"100%"}>
           <Flex
             direction={"column"}
             gap={{ base: "8px", laptop: "35px" }}
             h="100%"
+            w={"100%"}
           >
             <AnimateAllChildren>
               <Center

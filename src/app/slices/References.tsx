@@ -95,48 +95,53 @@ export const References = () => {
         width={"100%"}
         sx={{ "&>*": { w: "100%" } }}
       >
-        <AnimateAllChildren width={"100%"}>
-          <Flex
-            direction={"column"}
-            gap={{ base: "8px", laptop: "35px" }}
-            h="100%"
-            w={"100%"}
-          >
-            <AnimateAllChildren>
-              <Center
-                h={{ base: "100%", tablet: "430px", laptop: "637px" }}
-                mt={{ laptop: "65px" }}
-              >
-                <Text variant={"h2"} as="h2" color="black" textAlign={"center"}>
-                  {quotes[currentQuote].text}
-                </Text>
-              </Center>
+        {/* <AnimateAllChildren width={"100%"}> */}
+        <Flex
+          direction={"column"}
+          gap={{ base: "8px", laptop: "35px" }}
+          h="100%"
+          w={"100%"}
+        >
+          <AnimateAllChildren>
+            <Center
+              h={{ base: "100%", tablet: "430px", laptop: "637px" }}
+              mt={{ laptop: "65px" }}
+            >
+              <Text variant={"h2"} as="h2" color="black" textAlign={"center"}>
+                {quotes[currentQuote].text}
+              </Text>
+            </Center>
 
-              <Text variant="body" color="black" textAlign={"center"}>
-                {quotes[currentQuote].author}
-              </Text>
-              <Text variant="body" color="black" textAlign={"center"}>
-                {quotes[currentQuote].position}
-              </Text>
-            </AnimateAllChildren>
-          </Flex>
-          <Flex w={"100%"} justifyContent={"space-between"}>
-            <Button
-              variant={"primary"}
-              onClick={prevQuote}
-              textDecoration={"underline"}
+            <Text
+              variant="body"
+              color="black"
+              textAlign={"center"}
+              mt={{ base: "100px", tablet: "auto" }}
             >
-              Prev
-            </Button>
-            <Button
-              variant={"primary"}
-              onClick={nextQuote}
-              textDecoration={"underline"}
-            >
-              Next
-            </Button>
-          </Flex>
-        </AnimateAllChildren>
+              {quotes[currentQuote].author}
+            </Text>
+            <Text variant="body" color="black" textAlign={"center"}>
+              {quotes[currentQuote].position}
+            </Text>
+          </AnimateAllChildren>
+        </Flex>
+        <Flex w={"100%"} justifyContent={"space-between"}>
+          <Button
+            variant={"primary"}
+            onClick={prevQuote}
+            textDecoration={"underline"}
+          >
+            Prev
+          </Button>
+          <Button
+            variant={"primary"}
+            onClick={nextQuote}
+            textDecoration={"underline"}
+          >
+            Next
+          </Button>
+        </Flex>
+        {/* </AnimateAllChildren> */}
       </Center>
     </SimpleGrid>
   );

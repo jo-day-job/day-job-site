@@ -25,6 +25,7 @@ export default function Page() {
         "&>*": {
           // h: { base: "844px", tablet: "744px", laptop: "1024px" },
           overflow: "hidden",
+          maxW: "100vw",
         },
       }}
       bg="black"

@@ -1,4 +1,4 @@
-import { Flex, useColorModeValue } from "@chakra-ui/react";
+import { Center, Flex, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import { AnimateAllChildren } from "easy-chakra-animate";
 import Star from "../components/Star";
@@ -47,7 +47,7 @@ export const Hero = () => {
           src="/assets/images/Group_51.webp"
         />
       </Flex>
-      <Flex
+      <Center
         p={{ base: "16px", tablet: "0" }}
         justifyContent="flex-end"
         w="100%"
@@ -60,7 +60,7 @@ export const Hero = () => {
           height={500}
           src={imgSrc}
         />
-      </Flex>
+      </Center>
       <Flex
         justifyContent="flex-end"
         w="100%"

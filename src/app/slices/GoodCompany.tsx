@@ -23,7 +23,7 @@ export const GoodCompany = () => {
             h: "auto",
             // h: "fit-content",
             maxH: { base: "428px", tablet: "553px", laptop: "834px" },
-            maxW: "678px",
+            maxW: { base: "348px", tablet: "450px", laptop: "678px" },
             // transform: "rotate(5.78deg)",
             pt: "18px",
           },

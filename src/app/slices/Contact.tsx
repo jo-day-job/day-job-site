@@ -26,7 +26,7 @@ export const Contact = () => {
         <Box w="40%" display={{ base: "none", tablet: "block" }}>
           <Image
             alt=""
-            src="/assets/images/image 8.1.webp"
+            src="/assets/images/image_8.1.webp"
             width={312}
             height={380}
           />
@@ -67,7 +67,7 @@ export const Contact = () => {
       <Center w="100%" display={{ base: "flex", tablet: "none" }}>
         <Image
           alt=""
-          src="/assets/images/Group 57.webp"
+          src="/assets/images/Group_57.webp"
           width={414}
           height={404}
         />
@@ -106,7 +106,7 @@ export const Contact = () => {
         <Box w="40%" display={{ base: "none", tablet: "block" }}>
           <Image
             alt=""
-            src="/assets/images/image 8.webp"
+            src="/assets/images/image_8.webp"
             width={414}
             height={404}
           />

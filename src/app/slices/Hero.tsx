@@ -44,7 +44,7 @@ export const Hero = () => {
           alt=""
           width={462}
           height={356}
-          src="/assets/images/Group 51.webp"
+          src="/assets/images/Group_51.webp"
         />
       </Flex>
       <Flex
@@ -86,7 +86,7 @@ export const Hero = () => {
           alt=""
           width={462.4}
           height={356.8}
-          src="/assets/images/Group 51.webp"
+          src="/assets/images/Group_51.webp"
         />
       </Flex>
     </Flex>

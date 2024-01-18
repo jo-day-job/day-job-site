@@ -37,7 +37,7 @@ export const GoodCompany = () => {
             alt=""
             width={678}
             height={834}
-            src="/assets/images/Group 54.webp"
+            src="/assets/images/Group_54.webp"
           />
         </ScrollOnView>
       </Center>

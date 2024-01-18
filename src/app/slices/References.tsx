@@ -74,7 +74,7 @@ export const References = () => {
               alt=""
               width={395}
               height={265}
-              src="/assets/images/Group 56.webp"
+              src="/assets/images/Group_56.webp"
             />
           </Center>
           <Text variant={"h1"} as="h1" color="white" textAlign={"center"}>

@@ -58,7 +58,7 @@ export const Contact = () => {
               as="a"
               href="mailto:jo@day-job.co.uk"
             >
-              February 2024
+              Immediately
             </Button>
           </AnimateAllChildren>
         </Flex>

@@ -23,6 +23,7 @@ export const Intro = () => {
       py="64px"
       alignItems={"center"}
       px={{ base: "24px", tablet: "80px" }}
+      letterSpacing={{ base: "0.01em", tablet: "0.001em" }}
     >
       <AnimateAllChildren>
         <Center
@@ -49,6 +50,8 @@ export const Intro = () => {
                 alignItems="center"
                 flexDirection={{ base: "column", tablet: "row" }}
                 gap="8px"
+                bg="rgba(255,255,255,0.8)"
+                borderRadius="8px"
               >
                 <FancyTextBox
                   textArray={["Product", "UX", "Product", "UI", "digital"]}
@@ -126,9 +129,12 @@ export const Intro = () => {
             minW={{ base: "100%", tablet: "700px" }}
             zIndex={1}
             gap="24px"
+            bg="rgba(255,255,255,0.8)"
+            p="8px"
+            borderRadius="8px"
           >
             <AnimateAllChildren>
-              <Text variant="body" fontWeight="bold">
+              <Text variant="body" fontWeight="bold" letterSpacing="1%">
                 Jo Williamson is a digital product designer based in the North
                 East of England. With a first-class degree in Interaction Design
                 from Northumbria University and six+ years experience designing

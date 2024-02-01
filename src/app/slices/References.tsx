@@ -49,7 +49,8 @@ export const References = () => {
   return (
     <SimpleGrid
       columns={{ base: 1, tablet: 2 }}
-      h={{ base: "100%", tablet: "744px", laptop: "1024px" }}
+      // h={{ base: "100%", tablet: "744px", laptop: "1024px" }}
+      h="100%"
     >
       <Center
         bg="black"

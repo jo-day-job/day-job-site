@@ -64,7 +64,7 @@ export const Contact = () => {
         </Flex>
         <Box w="40%" display={{ base: "none", tablet: "block" }} />
       </Flex>
-      <Center w="100%" display={{ base: "flex", tablet: "none" }}>
+      <Center w="100%" display={{ base: "flex", tablet: "none" }} maxW="95vw">
         <Image
           alt=""
           src="/assets/images/Group_57.webp"
